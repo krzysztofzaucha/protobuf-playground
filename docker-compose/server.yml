@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+      target: final
+    image: ${IMAGE_BASE_NAME}-go:latest
+    container_name: ${BASE_NAME}-server
+    depends_on:
+      - mariadb
+    volumes:
+      - "../config.json:/opt/app/config.json"
+    entrypoint: "/entrypoint.sh"
+    command: --config=config.json --module=server
+
+networks:
+  default:
+    name: ${NETWORK}

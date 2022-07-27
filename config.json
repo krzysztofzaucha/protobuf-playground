@@ -1,0 +1,6 @@
+{
+  "server": {
+    "host": "protobuf-sandbox-server",
+    "port": 500
+  }
+}

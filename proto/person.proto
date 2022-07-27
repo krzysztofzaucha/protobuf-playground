@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "../../internal/model";
+
+message Address {
+  string Town = 1;
+  string City = 2;
+  string Country = 3;
+}
+
+message Person {
+  int32 ID = 1;
+  string Name = 2;
+  repeated string Email = 3;
+  repeated Address address = 4;
+}
+
+message CreatePersonRequest {
+  Person Person = 1;
+}
+
+message CreatePersonResponse {
+  Person Person = 1;
+}
+
+message ReadPersonRequest {
+  int32 ID = 1;
+}
+
+message ReadPersonResponse {
+  Person Person = 1;
+}
+
+service PersonService {
+  rpc CreatePerson(CreatePersonRequest) returns (CreatePersonResponse) {};
+  rpc ReadPerson(ReadPersonRequest) returns (ReadPersonResponse) {};
+}
