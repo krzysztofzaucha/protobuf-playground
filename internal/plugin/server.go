@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/krzysztofzaucha/protobuf-sandbox/internal"
-	"github.com/krzysztofzaucha/protobuf-sandbox/internal/model"
-	"github.com/krzysztofzaucha/protobuf-sandbox/internal/srv"
+	"github.com/krzysztofzaucha/protobuf-playground/internal"
+	"github.com/krzysztofzaucha/protobuf-playground/internal/model"
+	"github.com/krzysztofzaucha/protobuf-playground/internal/srv"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"

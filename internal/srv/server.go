@@ -2,7 +2,7 @@ package srv
 
 import (
 	"context"
-	"github.com/krzysztofzaucha/protobuf-sandbox/internal/model"
+	"github.com/krzysztofzaucha/protobuf-playground/internal/model"
 )
 
 type Server struct {

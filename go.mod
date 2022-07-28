@@ -1,4 +1,4 @@
-module github.com/krzysztofzaucha/protobuf-sandbox
+module github.com/krzysztofzaucha/protobuf-playground
 
 go 1.18
 

@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/krzysztofzaucha/protobuf-sandbox/internal"
+	"github.com/krzysztofzaucha/protobuf-playground/internal"
 	"os"
 	"plugin"
 	"runtime"

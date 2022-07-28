@@ -1,4 +1,4 @@
-# Protobuf Sandbox
+# Protobuf Playground
 
 This repository contains an example of **Protocol Buffers** used with **gRPC**.
 
